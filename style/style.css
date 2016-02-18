@@ -1,0 +1,490 @@
+body{
+	font-family: 'Ubuntu', sans-serif;
+    color: #393939
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+header{
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+}
+
+header .menuPrincipal{
+    background-color: #fff;
+    width: 100%;
+    z-index: 99;
+
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+}
+
+.headFixed{
+    position: fixed;
+    height: 60px;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+}
+
+.brand img{
+    margin: 10px 0;
+}
+
+.headFixed .brand img {
+    height: auto;
+    margin: 10px 0;
+    width: 70px;
+}
+
+.headFixed .call h1 {
+    font-size: 18px;
+}
+
+.headFixed .call h1 br{
+    display: none;}
+
+.slider{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: block;
+    z-index: 0;
+    background-image: url(../assets/bg-header.jpg);
+}
+
+.slider .donJulio{
+    background-image: url("../assets/don-julio.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 48px;
+    height: 460px;
+    position: relative;
+    width: 370px
+}
+
+.slider .toldo{
+    background-image: url("../assets/techo.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 600px;
+    width: 100%;
+    position: relative;
+    padding: 40px 100px
+}
+
+.slider .toldo:before{
+    content: "";
+    background-color: rgba(0,0,0,0.7);
+    width: 72%;
+    height: 468px;
+    position: absolute;
+    top: 32px;
+    z-index: -1;
+    right: auto;
+    left: 80px;
+    margin: 0 auto;
+}
+
+.slider .toldo:after{
+    content: "";
+    background-image: url(../assets/flecha.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    height: 270px;
+    width: 120px;
+    position: absolute;
+    left: 10px;
+    bottom: 80px;
+}
+
+.slider .toldo h2{
+    text-align: center;
+    font-size: 56px;
+    color:#FFF;
+}
+
+.slider .toldo h2 span{
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.slider .toldo ul{
+    color: #FFF
+}
+
+.slider .toldo ul li{
+    list-style: none;
+    list-style-image: url(../assets/check-01.png);
+    font-size: 18px;
+    margin: 2px 0;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.slider .toldo a{
+    width: 250px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #99bd11;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid 2px #759503;
+    border-radius: 5px;
+    padding: 10px;
+    bottom: -75px;
+}
+
+.call h1{
+    color: #393939;
+    font-size: 22px;
+    text-align: right;
+}
+
+.call h1 span{
+    color: #de2427
+}
+
+.clientes{
+    padding: 100px 0
+}
+
+.clientes .video{
+    background-image: url("../assets/macbook.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 340px;
+    padding: 40px 80px 70px;
+    width: 100%;
+}
+
+.clientes .video iframe{
+    width: 100%;
+    height: auto;
+    min-height: 230px;
+}
+
+.clientes h3{
+    color: #df1e21;
+    font-size: 34px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.clientes p{
+    color: #5e5e5e;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.hacemos{
+    background-color: #eb6365;
+    padding: 50px 0;
+    color: #FFF
+}
+
+.hacemos ul{
+    margin-top: 20px;
+}
+
+.hacemos ul li{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0;
+    list-style: none;
+    list-style-image: url(../assets/check-02.png);
+}
+
+.hacemos .text{
+    margin-top: 80px;
+}
+
+.hacemos .mobile{
+    background-image: url("../assets/mobile.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: auto;
+    margin: 0 auto;
+    min-height: 700px;
+    position: relative;
+    width: 65%;
+    padding: 79px 0 0 32px;
+}
+
+.hacemos .slideT, .hacemos .slideM{
+    display: none
+}
+
+.hacemos .active{
+    display: block;
+}
+
+.hacemos .slideMIndicators{
+    position: absolute;
+    float: none;
+    right: 0;
+    top: 0
+}
+
+.hacemos .slideMIndicators li{
+    float: none;
+    list-style: none;
+    height: 25px;
+    width: 25px;
+    background-color: #FFF;
+    border-radius: 100%;
+    border: solid 4px #be292b;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
+    top: 200px
+}
+
+/*.hacemos .slideMIndicators li span{
+    
+}*/
+
+.hacemos .slideMIndicators li.active{
+    background-color: #be292b;
+    cursor: default;
+}
+
+.hacemosIconos .parallax-container{
+    padding: 100px 0;
+    position: relative;
+    top: 0
+}
+
+.hacemosIconos .parallax-container::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.clientesDicen{
+    background-image: url(../assets/bgClientesdicen.jpg);
+    padding: 20px 0 70px
+}
+
+.hacemosIconos h4, .hacemosIconos p{
+    text-align: center;
+    color: #FFF;
+}
+
+.hacemosIconos img{
+    margin: 0 auto;
+    display: block;
+}
+
+.hacemosIconos h4{
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 0.7;
+    margin: 30px 0 0;
+}
+
+.hacemosIconos p{
+    font-size: 20px;
+}
+
+.carousel-inner{
+    top: 20px
+}
+
+.clientesDicen h4:before{
+    background-image: url("../assets/comillas.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+    height: 100px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.clientesDicen h4{ 
+    color: #ed6363;
+    display: block;
+    font-size: 30px;
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 110px;
+    position: relative;
+    text-align: center;
+    width: 40%;
+}
+
+.clientesDicen .carousel-inner img{
+    border: 6px solid #f26166;
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+}
+
+.clientesDicen .carousel-inner h5{
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.clientesDicen .carousel-inner h5 span{
+    color: #f26166;
+    text-align: center;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.clientesDicen .carousel-inner p{
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.5;
+    position: relative;
+}
+
+.clientesDicen .carousel-indicators{
+    position: relative;
+    margin: 0 auto;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.clientesDicen .carousel-indicators li{
+    width: 18px;
+    height: 18px;
+    background-color: #FFF;
+    border: none;
+    margin: 0 2px 0 0
+}
+.clientesDicen .carousel-indicators .active{
+    background-color: #e56864;
+}
+
+footer{
+    background-color: #2c3033;
+    padding: 60px
+}
+
+footer nav.enlaces, footer nav.socialMedia{
+    width: 100%;
+    display: inline-block;
+}
+
+footer nav.enlaces ul{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+footer nav.enlaces ul li{
+    float: left;
+    margin-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #FFF;
+    list-style: none;
+}
+
+footer nav.enlaces ul li:last-child{
+    border-right:none;
+}
+
+footer ul li a, footer ul li a:hover{
+    color: #FFF;
+    font-size: 16px
+}
+
+footer nav.socialMedia ul{
+    width: 27%;
+    margin: 20px auto 0;
+    display: block;
+}
+
+footer nav.socialMedia ul li{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: #FFF;
+    float: left;
+    margin-right: 10px;
+    vertical-align: text-top;
+    list-style: none;
+}
+
+footer nav.socialMedia ul li a{
+    font-size: 26px;
+    position: relative;
+    color: #2c3033;
+}
+
+footer nav.socialMedia ul li a:hover{
+
+}
+
+footer nav.socialMedia ul li a i{
+    left: 4px;
+    margin-top: 7px;
+    position: absolute;
+    right: auto;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+
+}
+
+footer nav.socialMedia ul li a i.fa-facebook{
+    left: 12px;
+}
+
+footer nav.socialMedia ul li a i.fa-twitter, footer nav.socialMedia ul li a i.fa-youtube, footer nav.socialMedia ul li a i.fa-linkedin{
+    left: 9px;
+}
+
+footer nav.socialMedia ul li a i.fa-facebook:hover{
+    color: #46629E
+}
+
+footer nav.socialMedia ul li a i.fa-twitter:hover{
+    color: #55ACEE
+}
+
+footer nav.socialMedia ul li a i.fa-google-plus:hover{
+    color:#DB4437;
+}
+
+footer nav.socialMedia ul li a i.fa-linkedin:hover{
+    color:#1C87BD;
+}
+
+footer nav.socialMedia ul li a i.fa-youtube:hover{
+    color:#F80025;
+}
